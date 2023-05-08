@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SATS Transport</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="scss/materialize.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <meta name="description" content="SATS Staff Transport Booking System">
+  <meta name="theme-color" content="#9e3039">
+  <meta property="og:image" content="./icons/icon-512.png">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json" />
+
+  <link rel="icon" type="image/png" href="icons/favicon-16x16" sizes="16x16">
+  <link rel="icon" type="image/png" href="icons/favicon-96.png" sizes="96x96">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" type="image/png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="SATS Transport">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+  <!-- dropdown main menu-->
+  <ul id="dropdown-1" class="dropdown-content">
+    <li><a href="index-dm-upload.html">Upload Excel File</a></li>
+    <li><a href="index-dm-indent.html">Indent Job</a></li>
+    <li><a href="index-dm-list.html">Job Lists</a></li>
+  </ul>
+
+  <ul id="dropdown-2" class="dropdown-content">
+    <li><a href="index-sats-assign.html">Assign</a></li>
+    <li><a href="index-sats-ongoing.html">Current</a></li>
+    <li><a href="index-sats-completed.html">Completed</a></li>
+  </ul>
+
+  <ul id="dropdown-3" class="dropdown-content">
+    <li><a href="index-setup-driver-listing.html">Driver</a></li>
+    <li><a href="index-setup-role.html">Role</a></li>
+    <li><a href="index-setup-staff.html">Staff</a></li>
+    <li><a href="index-setup-zone.html">Zone</a></li>
+    <li><a href="index-setup-postal.html">Postal Code</a></li>
+    <li><a href="index-setup-user.html">User</a></li>
+  </ul>
+ 
+  <ul id="dropdown-4" class="dropdown-content">
+    <li><a href="index-report-trip.html">Trip</a></li>
+    <li><a href="index-report-driver-payment.html">Driver Payment</a></li>
+    <li><a href="index-report-payment-summary.html">Payment Summary</a></li>
+  </ul>
+
+    <!-- dropdown mobile menu-->
+    <ul id="dropdown-5" class="dropdown-content">
+      <li><a href="index-dm-upload.html">Upload Excel File</a></li>
+      <li><a href="index-dm-indent.html">Indent Job</a></li>
+      <li><a href="index-dm-list.html">Job Lists</a></li>
+    </ul>
+  
+    <ul id="dropdown-6" class="dropdown-content">
+      <li><a href="index-sats-assign.html">Assign</a></li>
+      <li><a href="index-sats-ongoing.html">Current</a></li>
+      <li><a href="index-sats-completed.html">Completed</a></li>
+    </ul>
+  
+    <ul id="dropdown-7" class="dropdown-content">
+      <li><a href="index-setup-driver-listing.html">Driver</a></li>
+      <li><a href="index-setup-role.html">Role</a></li>
+      <li><a href="index-setup-staff.html">Staff</a></li>
+      <li><a href="index-setup-zone.html">Zone</a></li>
+      <li><a href="index-setup-postal.html">Postal Code</a></li>
+      <li><a href="index-setup-user.html">User</a></li>
+    </ul>
+   
+    <ul id="dropdown-8" class="dropdown-content">
+      <li><a href="index-report-trip.html">Trip</a></li>
+      <li><a href="index-report-driver-payment.html">Driver Payment</a></li>
+      <li><a href="index-report-payment-summary.html">Payment Summary</a></li>
+    </ul>
+
+  <!-- main nav -->
+  <nav>
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="index.html" class="brand-logo"><img src="images/sats-logo.png" alt="SATS logo" class="logo" /></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="tiny material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="index-dm-1.html">MAIN<i class="tiny material-icons right">home</i></a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-trigger" data-target="dropdown-1">DM TASKS<i
+                class="tiny material-icons right">task_alt</i></a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-trigger" data-target="dropdown-2">SATS TASKS<i
+                class="tiny material-icons right">task_alt</i></a>
+          </li>
+          <li>
+            <a href="index-job-listing.html">JOB LISTING<i class="material-icons right">list</i></a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-trigger" data-target="dropdown-3">SETUP<i
+                class="tiny material-icons right">event</i></a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-trigger" data-target="dropdown-4">REPORTS<i
+                class="tiny material-icons right">task</i></a>
+          </li>
+          <li>
+            <a href="#">LOGOUT<i class="tiny material-icons right">logout</i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- side nav -->
+  <ul class="sidenav" id="mobile-demo">
+    <li class="pad">
+      <a href="index.html" class="brand-logo"><img src="images/sats-logo-in.png" alt="SATS logo" /></a>
+    </li>
+    <div class="divider mt-1"></div>
+    <li>
+      <a href="index-dm-1.html">MAIN<i class="tiny material-icons right">home</i></a>
+    </li>
+    <li>
+      <a href="#" class="dropdown-trigger" data-target="dropdown-5">DM TASKS<i
+        class="tiny material-icons right">task_alt</i></a>
+    </li>
+    <li>
+      <a href="#" class="dropdown-trigger" data-target="dropdown-6">SATS TASKS<i
+        class="tiny material-icons right">task_alt</i></a>
+    </li>
+    <li>
+      <a href="index-job-listing.html">JOB LISTING<i class="material-icons right">list</i></a>
+    </li>
+    <li>
+      <a href="#" class="dropdown-trigger" data-target="dropdown-7">SETUP<i
+          class="tiny material-icons right">event</i></a>
+    </li>
+    <li>
+      <a href="#" class="dropdown-trigger" data-target="dropdown-8">REPORTS<i
+          class="tiny material-icons right">task</i></a>
+    </li>
+    <li>
+      <a href="#">LOGOUT<i class="tiny material-icons right">logout</i></a>
+    </li>
+  </ul>
+
+  <!-- dm contents -->
+  <div class="container">
+    <div class="row mt-1">
+      <div class="col s6">
+        <div class="title-wel">Welcome!</div>
+        <div class="title-name">Name Surname Alias</div>
+      </div>
+      <div class="col s4">
+        <!-- <div class="title-wel">Vehicle No.</div>
+        <div class="title-name fw-bold">SJX 3456 J</div> -->
+      </div>
+      <div class="col s2">
+        <div class="title-wel center"><a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i
+              class="material-icons grey-text small">sms</i></a> <span class="center-align cto-badge">4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider mt-1"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 title-bread">
+        REPORT&nbsp;
+        <span class="title-bread grey-text">>&nbsp;</span> 
+        <span class="title-bread-2">TRIPS</span>
+      </div>    
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+        <form>
+      <div class="col s12">
+
+        <div class="input-field">
+            <input id="startdate" type="text" class="datepicker">
+            <label for="start">Start Date</label>
+          </div>
+
+        <div class="input-field mt-1">
+            <input id="enddate" type="text" class="datepicker">
+            <label for="end">End Date</label>
+          </div>
+
+      </div> 
+      
+      <div class="input-field col s12 mt-1">
+        <select>
+          <option value="" disabled selected>Select Driver</option>
+          <option value="1">Driver 1</option>
+          <option value="2">Driver 2</option>
+          <option value="3">Driver 3</option>
+          <option value="4">Driver 4</option>
+          <option value="5">Driver 5</option>
+        </select>
+        <label>Driver</label>
+      </div> 
+
+      <div class="row">
+        <div class="col s12 mt-2">
+            <button class="btn teal waves-effect waves-light" type="submit" name="action">Search
+                <i class="material-icons right">search</i>
+                </button>
+            
+                <button class="btn grey waves-effect waves-light" type="submit" name="action">Clear
+                    <i class="material-icons right">clear</i>
+                    </button>
+        </div>
+        </div>
+    </form>
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <form>
+        <div class="col s12 table-wrapper">
+        <table class="striped">
+            <thead>
+              <tr style="color: #9e3039;">
+                  <th style="width:67px;">S/N</th>
+                  <th>Date</th>
+                  <th style="width:60px;">Time</th>
+                  <th>Name</th>
+                  <th>Mobile</th>
+                  <th>Pick Up</th>
+                  <th>Address</th>
+                  <th>Drop Off</th>
+       
+              </tr>
+            </thead>
+    
+            <tbody>
+              <tr>
+                <td style="width:67px;">
+                    <form action="#">
+                      <label>
+                        <label>
+                            <input type="checkbox" />
+                            <span>1</span>
+                          </label>
+                      </label>
+                  </form></td>
+                <td>21-Feb-2023</td>
+                <td style="width:60px;">04:00</td>
+                <td>John Loh Tze</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road</td>
+                <td>LCC 2</td>
+              </tr>
+              <tr>
+                <td style="width:67px;">
+                    <form action="#">
+                      <label>
+                        <label>
+                            <input type="checkbox" />
+                            <span>2</span>
+                          </label>
+                      </label>
+                  </form></td>
+                <td>21-Feb-2023</td>
+                <td style="width:60px;">04:00</td>
+                <td>John Loh Tze</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road</td>
+                <td>LCC 2</td>
+              </tr>
+              <tr>
+                <td style="width:67px;">
+                    <form action="#">
+                      <label>
+                        <label>
+                            <input type="checkbox" />
+                            <span>3</span>
+                          </label>
+                      </label>
+                  </form></td>
+                <td>21-Feb-2023</td>
+                <td style="width:60px;">04:00</td>
+                <td>John Loh Tze</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road</td>
+                <td>LCC 2</td>
+              </tr>
+              <tr>
+                <td style="width:67px;">
+                    <form action="#">
+                      <label>
+                        <label>
+                            <input type="checkbox" />
+                            <span>4</span>
+                          </label>
+                      </label>
+                  </form></td>
+                <td>21-Feb-2023</td>
+                <td style="width:60px;">04:00</td>
+                <td>John Loh Tze</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road</td>
+                <td>LCC 2</td>
+              </tr>
+              <tr>
+                <td style="width:67px;">
+                    <form action="#">
+                      <label>
+                        <label>
+                            <input type="checkbox" />
+                            <span>5</span>
+                          </label>
+                      </label>
+                  </form></td>
+                <td>21-Feb-2023</td>
+                <td style="width:60px;">04:00</td>
+                <td>John Loh Tze</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road</td>
+                <td>LCC 2</td>
+              </tr>
+              <tr>
+                <td style="width:67px;">
+                    <form action="#">
+                      <label>
+                        <label>
+                            <input type="checkbox" />
+                            <span>6</span>
+                          </label>
+                      </label>
+                  </form></td>
+                <td>21-Feb-2023</td>
+                <td style="width:60px;">04:00</td>
+                <td>John Loh Tze</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road</td>
+                <td>LCC 2</td>
+              </tr>
+              <tr>
+                <td style="width:67px;">
+                    <form action="#">
+                      <label>
+                        <label>
+                            <input type="checkbox" />
+                            <span>7</span>
+                          </label>
+                      </label>
+                  </form></td>
+                <td>21-Feb-2023</td>
+                <td style="width:60px;">04:00</td>
+                <td>John Loh Tze</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road</td>
+                <td>LCC 2</td>
+              </tr>
+              <tr>
+                <td style="width:67px;">
+                    <form action="#">
+                      <label>
+                        <label>
+                            <input type="checkbox" />
+                            <span>8</span>
+                          </label>
+                      </label>
+                  </form></td>
+                <td>21-Feb-2023</td>
+                <td style="width:60px;">04:00</td>
+                <td>John Loh Tze</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road</td>
+                <td>LCC 2</td>
+              </tr>
+              <tr>
+                <td style="width:67px;">
+                    <form action="#">
+                      <label>
+                        <label>
+                            <input type="checkbox" />
+                            <span>9</span>
+                          </label>
+                      </label>
+                  </form></td>
+                <td>21-Feb-2023</td>
+                <td style="width:60px;">04:00</td>
+                <td>John Loh Tze</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road</td>
+                <td>LCC 2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- <div class="row">
+          <div class="col s12 mt-2">
+            <button class="btn grey waves-effect waves-light" type="submit" name="action">Remove
+          <i class="material-icons right">remove</i>
+        </button>
+        <button class="btn teal waves-effect waves-light" type="submit" name="action">Add New
+          <i class="material-icons right">add</i>
+        </button>
+      </div>
+    </div> -->
+      </form>
+    </div>
+  </div>
+
+ 
+  
+
+  <!-- notification messages -->
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+        </div>
+      </div>
+    </li>
+    <li><a href="#!"><i class="material-icons">sms</i>MESSAGES</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li>
+      <div class="user-view">
+        <div class="pad-s">
+          <h5>NEW! DATE</h5>
+          <p>This is the new message.</p>
+        </div>
+        <div class="divider"></div>
+        <div class="pad-s">
+          <h5>NEW! DATE</h5>
+          <p>This is the new message.</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <!-- footer -->
+  <footer>
+    <div class="container text-small mt-1">
+      <div class="footer">© 2023 SKETCH IT PTE LTD</div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

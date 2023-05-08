@@ -1,0 +1,32 @@
+{
+    "background_color": "#9e3039",
+    "description": "SATS Staff Transport DM APP",
+    "theme_color": "#9e3039",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "./icons/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-96.png",
+        "sizes": "96x96",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      }
+    ],
+    "name": "SATS DM",
+    "short_name": "SATS DM",
+    "id": "./index.html",
+    "start_url": "https://www.notforsales.com/SATS-DM/index.html"
+  }
