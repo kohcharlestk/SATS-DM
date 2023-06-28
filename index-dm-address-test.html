@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SATS Transport</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="scss/materialize.css" />
+  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script> -->
+
+
+  <meta name="description" content="SATS Staff Transport Booking System">
+  <meta name="theme-color" content="#9e3039">
+  <meta property="og:image" content="./icons/icon-512.png">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json" />
+
+  <link rel="icon" type="image/png" href="icons/favicon-16x16" sizes="16x16">
+  <link rel="icon" type="image/png" href="icons/favicon-96.png" sizes="96x96">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" type="image/png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="SATS Transport">
+  <meta name="mobile-web-app-capable" content="yes">
+
+
+</head>
+
+<body>
+  <!-- driver contents -->
+  <div class="container">
+    <div class="row mt-1">
+      <div class="col s6">
+        <div class="title-wel">Welcome!</div>
+        <div class="title-name">Name Surname Alias</div>
+      </div>
+      <div class="col s4">
+        <!-- <div class="title-wel">Vehicle No.</div>
+        <div class="title-name fw-bold">SJX 3456 J</div> -->
+      </div>
+      <div class="col s2">
+        <div class="title-wel center"><a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i
+              class="material-icons grey-text small">sms</i></a> <span class="center-align cto-badge">4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider mt-1"></div>
+
+  <!-- main content -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 title-bread">
+        DM TASKS&nbsp;
+        <span class="title-bread grey-text">>&nbsp;</span> 
+        <span class="title-bread-2">INDENT JOB</span>
+      </div>    
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 mt-1 center"><h5>ONEMAP API EXAMPLE</h5></div>
+    </div>
+  </div>
+
+  <!-- indent -->
+  <form id="searchForm">
+
+  <div class="container">
+    <div class="row">
+          <div class="input-field col s8">
+            <input type="text" placeholder="Postal Code" id="postalCode"  class="black-text">
+            <label for="postalCode" class="red-text">ENTER POSTAL CODE</label>
+          </div>
+          <div class="col s3">  
+            <button type="submit" class="btn">Search</button>
+          </div>
+          <div class="col s12">
+            <div id="addre" type="text" class="black-text" >
+              <label for="addre" class="red-text">ADDRESS:</label>
+          </div>
+    </div>
+  </div>
+</form>
+
+<!-- <div id="addre"></div> -->
+
+  <div class="container">
+    <div class="col s12 mt-3 center">
+        <a href="javascript:history.back()" class="grey-text">BACK</a>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <footer>
+    <div class="container text-small mt-1">
+      <div class="footer">© 2023 SKETCH IT PTE LTD</div>
+    </div>
+  </footer>
+
+
+  <!-- ONEMAP SCRIPT-->
+  <script src="./js/onemapchat.js"></script>
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+</body>
+
+</html>

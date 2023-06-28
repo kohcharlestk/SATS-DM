@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Postal Code Search</title>
+</head>
+<body>
+  <h1>Postal Code Search</h1>
+
+  <form id="searchForm">
+    <label for="postalCode">Enter Postal Code:</label>
+    <input type="text" id="postalCode" placeholder="e.g. 123456" required>
+    <button type="submit">Search</button>
+  </form>
+
+  <div id="results"></div>
+  
+
+  <script>
+    const form = document.getElementById('searchForm');
+    const resultsDiv = document.getElementById('results');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Prevent form submission
+
+      const postalCodeInput = document.getElementById('postalCode');
+      const postalCode = postalCodeInput.value;
+
+      fetch(`https://developers.onemap.sg/commonapi/search?searchVal=${postalCode}&returnGeom=Y&getAddrDetails=Y&pageNum=1`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.results.length > 0) {
+            const address = data.results[0].ADDRESS;
+            resultsDiv.innerHTML = `<p>Address: ${address}</p>`;
+          } else {
+            resultsDiv.innerHTML = '<p>No results found.</p>';
+          }
+        })
+        .catch(error => {
+          resultsDiv.innerHTML = `<p>Error: ${error.message}</p>`;
+        });
+    });
+  </script>
+</body>
+</html>

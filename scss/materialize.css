@@ -5,6 +5,16 @@ body {
   color: #37474f;
 }
 
+.country-list {
+  padding: 0;
+  margin: 0;
+}
+
+.country-list li {
+  list-style-type: none;
+  display: block;
+}
+
 h1 {
   font-family: "Roboto Flex", sans-serif;
   color: #37474f;
