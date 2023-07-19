@@ -24,6 +24,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="SATS Transport">
   <meta name="mobile-web-app-capable" content="yes">
+
+
 </head>
 
 <body>
@@ -165,9 +167,9 @@
         <div class="title-name fw-bold">SJX 3456 J</div> -->
       </div>
       <div class="col s2">
-        <div class="title-wel center"><a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i
+        <!-- <div class="title-wel center"><a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i
               class="material-icons grey-text small">sms</i></a> <span class="center-align cto-badge">4</span>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -186,12 +188,12 @@
 
 
   <!-- tabs  -->
-
+<div class="container">
   <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
-    <li class="tab center"><a class="active white-text teal" href="#hta"> HOME TO AIRPORT</a></li>
-    <li class="tab"><a class="active white-text teal darken-1" href="#ath"> AIRPORT TO HOME</a></li>
+    <li class="tab center"><a class="active white-text fw-bolder teal" href="#hta"> HOME TO AIRPORT</a></li>
+    <li class="tab"><a class="active white-text teal fw-bolder darken-1" href="#ath"> AIRPORT TO HOME</a></li>
   </ul>
-
+</div>
 
    
   <!----------------------- main content --------------------------->
@@ -199,424 +201,333 @@
 
   <div class="container" id="hta">
     <div class="row">
-      <div class="col s12 mt-1 center"><h5>HOME TO AIRPORT</h5></div>
+      <div class="col s12 mt-4 center"><h4>HOME TO AIRPORT</h4></div>
     </div>
+    <div class="row">
+      <div class="col s12">
+
+    <button class="btn teal waves-effect waves-light" type="submit" name="action">Add New
+      <i class="material-icons right">add</i>
+    </button>
+
+      <button class="btn grey waves-effect waves-light" type="submit" name="action">Remove
+        <i class="material-icons right">remove</i>
+      </button>
+    
+  </div>
+</div>
   </div>
 
   <!-- table start -->
   <div class="container">
     <div class="row">
-      <form>
         <div class="col s12 table-wrapper">
-        <table class="striped">
-            <thead>
-              <tr style="color: #9e3039;">
-                  <th style="width:67px;">S/N</th>
-                  <th>Date</th>
-                  <th style="width:60px;">Time</th>
-                  <th>Name</th>
-                  <th>Mobile</th>
-                  <th>Pick Up</th>
-                  <th>Address</th>
-                  <th>Drop Off</th>
-       
+        <table class="">
+            <thead style="color: #9e3039;">
+              <tr>
+                  <th style="width: 25px;">
+                    <label><input type="checkbox" id="allchk" name="allchk" />
+                        <span></span>
+                    </label>
+                    </th>
+                  <th style="width: 30px;">S/N</th>
+                  <th style="width: 80px;">DATE</th>
+                  <th style="width: 50px;">TIME</th>
+                  <th style="width: 180px;">NAME</th>
+                  <th style="width: 94px;">MOBILE</th>
+                  <th style="width: 84px;">PICK UP</th>
+                  <th style="width: 200px;">ADDRESS</th>
+                  <th style="width: 80px;">DROP OFF</th>
               </tr>
             </thead>
     
             <tbody>
-              <tr>
-                <td style="width:67px;">
-                    <form action="#">
-                      <label>
-                        <label>
-                            <input type="checkbox" />
-                            <span>1</span>
-                          </label>
-                      </label>
-                  </form></td>
+              <tr class="g-bg-r">
+                <td>
+                <label>
+                    <input type="checkbox" id="cb1"/>
+                    <span></span>
+                </label>
+                </td>
+                <td>1</td>
                 <td>21-Feb-2023</td>
-                <td style="width:60px;">04:00</td>
-                <td>John Loh Tze</td>
+                <td>04:00</td>
+                <td>Devaruban Al Subramaniam</td>
+                <td>+6593616577</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road St 11</td>
+                <td>LCC 2</td>
+              </tr>
+              <tr class="g-bg-r">
+                <td>
+                <label>
+                    <input type="checkbox" id="cb2" />
+                    <span></span>
+                </label>
+                </td>
+                <td>2</td>
+                <td>21-Feb-2023</td>
+                <td>04:00</td>
+                <td>Muhammad Nazreen Sadaik Bin M Jahabar</td>
                 <td>95607839</td>
                 <td>S034958</td>
-                <td>16 Telok Blangah Road</td>
+                <td>16 Telok Blangah Road St 11</td>
                 <td>LCC 2</td>
               </tr>
               <tr>
-                <td style="width:67px;">
-                    <form action="#">
-                      <label>
-                        <label>
-                            <input type="checkbox" />
-                            <span>2</span>
-                          </label>
-                      </label>
-                  </form></td>
+                <td>
+                <label>
+                    <input type="checkbox" id="cb3" />
+                    <span></span>
+                </label>
+                </td>
+                <td>3</td>
                 <td>21-Feb-2023</td>
-                <td style="width:60px;">04:00</td>
-                <td>John Loh Tze</td>
+                <td>04:00</td>
+                <td>Xavier S/O Susainathan</td>
                 <td>95607839</td>
                 <td>S034958</td>
-                <td>16 Telok Blangah Road</td>
+                <td>16 Telok Blangah Road St 11</td>
+                <td>LCC 2</td>
+              </tr>
+              <tr class="g-bg-y">
+                <td>
+                <label>
+                    <input type="checkbox" id="cb4" />
+                    <span></span>
+                </label>
+                </td>
+                <td>4</td>
+                <td>21-Feb-2023</td>
+                <td>04:00</td>
+                <td>Sri Eswara A/L Segaran</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road St 11</td>
+                <td>LCC 2</td>
+              </tr>
+              <tr class="g-bg-y">
+                <td>
+                <label>
+                    <input type="checkbox" id="cb5" />
+                    <span></span>
+                </label>
+                </td>
+                <td>5</td>
+                <td>21-Feb-2023</td>
+                <td>04:00</td>
+                <td>John Loh Tze Koon</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road St 11</td>
+                <td>LCC 2</td>
+              </tr>
+              <tr class="g-bg-y">
+                <td>
+                <label>
+                    <input type="checkbox" id="cb6" />
+                    <span></span>
+                </label>
+                </td>
+                <td>6</td>
+                <td>21-Feb-2023</td>
+                <td>04:00</td>
+                <td>John Loh Tze Koon</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road St 11</td>
                 <td>LCC 2</td>
               </tr>
               <tr>
-                <td style="width:67px;">
-                    <form action="#">
-                      <label>
-                        <label>
-                            <input type="checkbox" />
-                            <span>3</span>
-                          </label>
-                      </label>
-                  </form></td>
+                <td>
+                <label>
+                    <input type="checkbox" id="cb7" />
+                    <span></span>
+                </label>
+                </td>
+                <td>7</td>
                 <td>21-Feb-2023</td>
-                <td style="width:60px;">04:00</td>
-                <td>John Loh Tze</td>
+                <td>04:00</td>
+                <td>John Loh Tze Koon</td>
                 <td>95607839</td>
                 <td>S034958</td>
-                <td>16 Telok Blangah Road</td>
-                <td>LCC 2</td>
-              </tr>
-              <tr>
-                <td style="width:67px;">
-                    <form action="#">
-                      <label>
-                        <label>
-                            <input type="checkbox" />
-                            <span>4</span>
-                          </label>
-                      </label>
-                  </form></td>
-                <td>21-Feb-2023</td>
-                <td style="width:60px;">04:00</td>
-                <td>John Loh Tze</td>
-                <td>95607839</td>
-                <td>S034958</td>
-                <td>16 Telok Blangah Road</td>
-                <td>LCC 2</td>
-              </tr>
-              <tr>
-                <td style="width:67px;">
-                    <form action="#">
-                      <label>
-                        <label>
-                            <input type="checkbox" />
-                            <span>5</span>
-                          </label>
-                      </label>
-                  </form></td>
-                <td>21-Feb-2023</td>
-                <td style="width:60px;">04:00</td>
-                <td>John Loh Tze</td>
-                <td>95607839</td>
-                <td>S034958</td>
-                <td>16 Telok Blangah Road</td>
-                <td>LCC 2</td>
-              </tr>
-              <tr>
-                <td style="width:67px;">
-                    <form action="#">
-                      <label>
-                        <label>
-                            <input type="checkbox" />
-                            <span>6</span>
-                          </label>
-                      </label>
-                  </form></td>
-                <td>21-Feb-2023</td>
-                <td style="width:60px;">04:00</td>
-                <td>John Loh Tze</td>
-                <td>95607839</td>
-                <td>S034958</td>
-                <td>16 Telok Blangah Road</td>
-                <td>LCC 2</td>
-              </tr>
-              <tr>
-                <td style="width:67px;">
-                    <form action="#">
-                      <label>
-                        <label>
-                            <input type="checkbox" />
-                            <span>7</span>
-                          </label>
-                      </label>
-                  </form></td>
-                <td>21-Feb-2023</td>
-                <td style="width:60px;">04:00</td>
-                <td>John Loh Tze</td>
-                <td>95607839</td>
-                <td>S034958</td>
-                <td>16 Telok Blangah Road</td>
-                <td>LCC 2</td>
-              </tr>
-              <tr>
-                <td style="width:67px;">
-                    <form action="#">
-                      <label>
-                        <label>
-                            <input type="checkbox" />
-                            <span>8</span>
-                          </label>
-                      </label>
-                  </form></td>
-                <td>21-Feb-2023</td>
-                <td style="width:60px;">04:00</td>
-                <td>John Loh Tze</td>
-                <td>95607839</td>
-                <td>S034958</td>
-                <td>16 Telok Blangah Road</td>
-                <td>LCC 2</td>
-              </tr>
-              <tr>
-                <td style="width:67px;">
-                    <form action="#">
-                      <label>
-                        <label>
-                            <input type="checkbox" />
-                            <span>9</span>
-                          </label>
-                      </label>
-                  </form></td>
-                <td>21-Feb-2023</td>
-                <td style="width:60px;">04:00</td>
-                <td>John Loh Tze</td>
-                <td>95607839</td>
-                <td>S034958</td>
-                <td>16 Telok Blangah Road</td>
+                <td>16 Telok Blangah Road St 11</td>
                 <td>LCC 2</td>
               </tr>
             </tbody>
           </table>
+        </div>    
         </div>
-        <div class="row">
-          <div class="col s12 mt-2">
 
-        <button class="btn teal waves-effect waves-light" type="submit" name="action">Add New
-          <i class="material-icons right">add</i></button>
 
-          <button class="btn grey waves-effect waves-light" type="submit" name="action">Remove
-            <i class="material-icons right">remove</i>
-          </button>
-        
-      </div>
-    </div>
-      </form>
-    </div>
   </div>
 
-<!----------------------- hta table end--------------------------->
+<!-- table starts -->
 
-<!----------------------- ath table end--------------------------->
-
+<!-- Airport to Home -->
 
 <div class="container" id="ath">
   <div class="row">
-    <div class="col s12 mt-1 center"><h5>AIRPORT TO HOME</h5></div>
+    <div class="col s12 mt-4 center"><h4>AIRPORT TO HOME</h4></div>
   </div>
+  <div class="row">
+    <div class="col s12">
+
+  <button class="btn teal waves-effect waves-light" type="submit" name="action">Add New
+    <i class="material-icons right">add</i>
+  </button>
+
+    <button class="btn grey waves-effect waves-light" type="submit" name="action">Remove
+      <i class="material-icons right">remove</i>
+    </button>
+  
+</div>
+</div>
 </div>
 
-<!-- table start -->
+
 <div class="container">
   <div class="row">
-    <form>
       <div class="col s12 table-wrapper">
-      <table class="striped">
-          <thead>
-            <tr style="color: #9e3039;">
-                <th style="width:67px;">S/N</th>
-                <th>Date</th>
-                <th style="width:60px;">Time</th>
-                <th>Name</th>
-                <th>Mobile</th>
-                <th>Pick Up</th>
-                <th>Address</th>
-                <th>Drop Off</th>
-     
+      <table class="">
+          <thead style="color: #9e3039;">
+            <tr>
+                <th style="width: 36px;">
+                  <label><input type="checkbox" id="allchk2" name="allchk2" />
+                      <span></span>
+                  </label>
+                  </th>
+                <th style="width: 40px;">S/N</th>
+                <th style="width: 106px;">DATE</th>
+                <th style="width: 60px;">TIME</th>
+                <th style="width: 180px;">NAME</th>
+                <th style="width: 94px;">MOBILE</th>
+                <th style="width: 84px;">PICK UP</th>
+                <th style="width: 200px;">ADDRESS</th>
+                <th style="width: 80px;">DROP OFF</th>
             </tr>
           </thead>
   
           <tbody>
             <tr>
-              <td style="width:67px;">
-                  <form action="#">
-                    <label>
-                      <label>
-                          <input type="checkbox" />
-                          <span>1</span>
-                        </label>
-                    </label>
-                </form></td>
+              <td>
+              <label>
+                  <input type="checkbox" id="cb1"/>
+                  <span></span>
+              </label>
+              </td>
+              <td>1</td>
               <td>21-Feb-2023</td>
-              <td style="width:60px;">04:00</td>
-              <td>John Loh Tze</td>
+              <td>04:00</td>
+              <td>John Loh Tze Koon</td>
               <td>95607839</td>
               <td>S034958</td>
-              <td>16 Telok Blangah Road</td>
+              <td>16 Telok Blangah Road St 11</td>
               <td>LCC 2</td>
             </tr>
             <tr>
-              <td style="width:67px;">
-                  <form action="#">
-                    <label>
-                      <label>
-                          <input type="checkbox" />
-                          <span>2</span>
-                        </label>
-                    </label>
-                </form></td>
+              <td>
+              <label>
+                  <input type="checkbox" id="cb2" />
+                  <span></span>
+              </label>
+              </td>
+              <td>2</td>
               <td>21-Feb-2023</td>
-              <td style="width:60px;">04:00</td>
-              <td>John Loh Tze</td>
+              <td>04:00</td>
+              <td>John Loh Tze Koon</td>
               <td>95607839</td>
               <td>S034958</td>
-              <td>16 Telok Blangah Road</td>
+              <td>16 Telok Blangah Road St 11</td>
               <td>LCC 2</td>
             </tr>
             <tr>
-              <td style="width:67px;">
-                  <form action="#">
-                    <label>
-                      <label>
-                          <input type="checkbox" />
-                          <span>3</span>
-                        </label>
-                    </label>
-                </form></td>
+              <td>
+              <label>
+                  <input type="checkbox" id="cb3" />
+                  <span></span>
+              </label>
+              </td>
+              <td>1</td>
               <td>21-Feb-2023</td>
-              <td style="width:60px;">04:00</td>
-              <td>John Loh Tze</td>
+              <td>04:00</td>
+              <td>John Loh Tze Koon</td>
               <td>95607839</td>
               <td>S034958</td>
-              <td>16 Telok Blangah Road</td>
+              <td>16 Telok Blangah Road St 11</td>
               <td>LCC 2</td>
             </tr>
             <tr>
-              <td style="width:67px;">
-                  <form action="#">
-                    <label>
-                      <label>
-                          <input type="checkbox" />
-                          <span>4</span>
-                        </label>
-                    </label>
-                </form></td>
+              <td>
+              <label>
+                  <input type="checkbox" id="cb4" />
+                  <span></span>
+              </label>
+              </td>
+              <td>1</td>
               <td>21-Feb-2023</td>
-              <td style="width:60px;">04:00</td>
-              <td>John Loh Tze</td>
+              <td>04:00</td>
+              <td>John Loh Tze Koon</td>
               <td>95607839</td>
               <td>S034958</td>
-              <td>16 Telok Blangah Road</td>
+              <td>16 Telok Blangah Road St 11</td>
               <td>LCC 2</td>
             </tr>
             <tr>
-              <td style="width:67px;">
-                  <form action="#">
-                    <label>
-                      <label>
-                          <input type="checkbox" />
-                          <span>5</span>
-                        </label>
-                    </label>
-                </form></td>
+              <td>
+              <label>
+                  <input type="checkbox" id="cb5" />
+                  <span></span>
+              </label>
+              </td>
+              <td>1</td>
               <td>21-Feb-2023</td>
-              <td style="width:60px;">04:00</td>
-              <td>John Loh Tze</td>
+              <td>04:00</td>
+              <td>John Loh Tze Koon</td>
               <td>95607839</td>
               <td>S034958</td>
-              <td>16 Telok Blangah Road</td>
+              <td>16 Telok Blangah Road St 11</td>
               <td>LCC 2</td>
             </tr>
             <tr>
-              <td style="width:67px;">
-                  <form action="#">
-                    <label>
-                      <label>
-                          <input type="checkbox" />
-                          <span>6</span>
-                        </label>
-                    </label>
-                </form></td>
+              <td>
+              <label>
+                  <input type="checkbox" id="cb6" />
+                  <span></span>
+              </label>
+              </td>
+              <td>1</td>
               <td>21-Feb-2023</td>
-              <td style="width:60px;">04:00</td>
-              <td>John Loh Tze</td>
+              <td>04:00</td>
+              <td>John Loh Tze Koon</td>
               <td>95607839</td>
               <td>S034958</td>
-              <td>16 Telok Blangah Road</td>
+              <td>16 Telok Blangah Road St 11</td>
               <td>LCC 2</td>
             </tr>
             <tr>
-              <td style="width:67px;">
-                  <form action="#">
-                    <label>
-                      <label>
-                          <input type="checkbox" />
-                          <span>7</span>
-                        </label>
-                    </label>
-                </form></td>
+              <td>
+              <label>
+                  <input type="checkbox" id="cb7" />
+                  <span></span>
+              </label>
+              </td>
+              <td>1</td>
               <td>21-Feb-2023</td>
-              <td style="width:60px;">04:00</td>
-              <td>John Loh Tze</td>
+              <td>04:00</td>
+              <td>John Loh Tze Koon</td>
               <td>95607839</td>
               <td>S034958</td>
-              <td>16 Telok Blangah Road</td>
-              <td>LCC 2</td>
-            </tr>
-            <tr>
-              <td style="width:67px;">
-                  <form action="#">
-                    <label>
-                      <label>
-                          <input type="checkbox" />
-                          <span>8</span>
-                        </label>
-                    </label>
-                </form></td>
-              <td>21-Feb-2023</td>
-              <td style="width:60px;">04:00</td>
-              <td>John Loh Tze</td>
-              <td>95607839</td>
-              <td>S034958</td>
-              <td>16 Telok Blangah Road</td>
-              <td>LCC 2</td>
-            </tr>
-            <tr>
-              <td style="width:67px;">
-                  <form action="#">
-                    <label>
-                      <label>
-                          <input type="checkbox" />
-                          <span>9</span>
-                        </label>
-                    </label>
-                </form></td>
-              <td>21-Feb-2023</td>
-              <td style="width:60px;">04:00</td>
-              <td>John Loh Tze</td>
-              <td>95607839</td>
-              <td>S034958</td>
-              <td>16 Telok Blangah Road</td>
+              <td>16 Telok Blangah Road St 11</td>
               <td>LCC 2</td>
             </tr>
           </tbody>
         </table>
+      </div>    
       </div>
-      <div class="row">
-        <div class="col s12 mt-2">
-       
-      <button class="btn teal waves-effect waves-light" type="submit" name="action">Add New
-        <i class="material-icons right">add</i>
-      </button>
-      <button class="btn grey waves-effect waves-light" type="submit" name="action">Remove
-        <i class="material-icons right">remove</i>
-      </button>
-    </div>
-   
-  </div>
-    </form>
-  </div>
 </div>
+
+
 
   <div class="container">
     <div class="col s12 mt-3 center">
@@ -665,6 +576,7 @@
 
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 
 </html>

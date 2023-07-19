@@ -91,7 +91,7 @@
         <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="tiny material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li>
-            <a href="index-dm-1.html">MAIN<i class="tiny material-icons right">home</i></a>
+            <a href="index-dm-indent.html">MAIN<i class="tiny material-icons right">home</i></a>
           </li>
           <li>
             <a href="#" class="dropdown-trigger" data-target="dropdown-1">DM TASKS<i
@@ -127,7 +127,7 @@
     </li>
     <div class="divider mt-1"></div>
     <li>
-      <a href="index-dm-1.html">MAIN<i class="tiny material-icons right">home</i></a>
+      <a href="index-dm-indent.html">MAIN<i class="tiny material-icons right">home</i></a>
     </li>
     <li>
       <a href="#" class="dropdown-trigger" data-target="dropdown-5">DM TASKS<i
@@ -190,23 +190,23 @@
 
   <div class="container">
     <div class="row">
-      <div class="col s12 mt-1 center"><h5>HOME TO AIRPORT</h5></div>
+      <div class="col s12 mt-1 center"><h5>AIRPORT TO HOME</h5></div>
     </div>
   </div>
 
   <!-- indent -->
   <div class="container">
     <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s12 m6">
             <select>
-              <option value="" disabled selected>Drop Off Location</option>
+              <option value="" disabled selected>Pick Up Location</option>
               <option value="1">Option 1</option>
               <option value="2">Option 2</option>
               <option value="3">Option 3</option>
             </select>
             <label class="grey-text">Select</label>
           </div>
-          <div class="input-field col s12">
+        <div class="input-field col s12 m6">
             <select>
               <option value="" disabled selected>Pick Up Time</option>
               <option value="1">Option 1</option>
@@ -221,15 +221,23 @@
             </select>
             <label class="grey-text">Select</label>
           </div>
-          <div class="input-field col s12">
+        <div class="input-field col s12 m6">
             <input placeholder="Name / Staff ID" id="first_name" type="text" class="black-text">
             <label for="first_name" class="grey-text">Pax</label>
           </div>
+        <div class="input-field col s12 m6">
+            <input type="text" placeholder="Enter" id="postalCode"  class="black-text">
+            <label for="postalcode" class="grey-text">Postal Code</label>
+          </div>
   </div>
-  <div class="row"><div class="col s12"><button class="btn teal waves-effect waves-light" type="submit" href="index-dm-list.html" name="action">Submit
-    <i class="material-icons right">send</i>
-  </button></div></form></div>
+
+  <div class="row"><div class="col s12">  <a class="btn teal waves-effect waves-light" href="index-job-listing.html" type="submit"
+    name="action">CONFIRM
+    <i class="material-icons right">start</i>
+  </a></div></form></div>
   </div>
+
+
 
   <div class="container">
     <div class="col s12 mt-3 center">
@@ -272,6 +280,9 @@
       <div class="footer">© 2023 SKETCH IT PTE LTD</div>
     </div>
   </footer>
+
+    <!-- ONEMAP SCRIPT-->
+    <script src="./js/onemapchat.js"></script>
 
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="js/script.js"></script>

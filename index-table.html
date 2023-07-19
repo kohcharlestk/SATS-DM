@@ -24,6 +24,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="SATS Transport">
   <meta name="mobile-web-app-capable" content="yes">
+
+
 </head>
 
 <body>
@@ -165,9 +167,9 @@
         <div class="title-name fw-bold">SJX 3456 J</div> -->
       </div>
       <div class="col s2">
-        <!-- <div class="title-wel center"><a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i
+        <div class="title-wel center"><a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i
               class="material-icons grey-text small">sms</i></a> <span class="center-align cto-badge">4</span>
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -178,26 +180,135 @@
     <div class="row">
       <div class="col s12 title-bread">
         DM TASKS&nbsp;
-        <span class="title-bread grey-text"> >&nbsp;</span> 
-        <span class="title-bread-2">UPLOAD FILES</span>
+        <span class="title-bread grey-text">>&nbsp;</span> 
+        <span class="title-bread-2">JOB LIST</span>
       </div>    
     </div>
   </div>
 
-  <div class="container">
+
+  <!-- tabs  -->
+
+  <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+    <li class="tab center"><a class="active white-text teal" href="#hta"> HOME TO AIRPORT</a></li>
+    <li class="tab"><a class="active white-text teal darken-1" href="#ath"> AIRPORT TO HOME</a></li>
+  </ul>
+
+
+   
+  <!----------------------- main content --------------------------->
+
+
+  <div class="container" id="hta">
     <div class="row">
-      <div class="col s12 center teal-text mt-3"><h4><i class="material-icons">done</i> Completed!</h4></div>
+      <div class="col s12 mt-1 center"><h4>HOME TO AIRPORT</h4></div>
     </div>
   </div>
+
+  <!-- table start -->
+  <div class="container">
+    <div class="row">
+        <div class="col s12 table-wrapper">
+        <table class="">
+            <thead style="color: #9e3039;">
+              <tr>
+                  <th style="width: 36px;">
+                    <label><input type="checkbox" id="allchk" name="allchk" />
+                        <span></span>
+                    </label>
+                    </th>
+                  <th style="width: 40px;">S/N</th>
+                  <th style="width: 106px;">DATE</th>
+                  <th style="width: 60px;">TIME</th>
+                  <th style="width: 180px;">NAME</th>
+                  <th style="width: 94px;">MOBILE</th>
+                  <th style="width: 84px;">PICK UP</th>
+                  <th style="width: 200px;">ADDRESS</th>
+                  <th style="width: 80px;">DROP OFF</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+              <tr>
+                <td>
+                <label>
+                    <input type="checkbox" id="cb1"/>
+                    <span></span>
+                </label>
+                </td>
+                <td>1</td>
+                <td>21-Feb-2023</td>
+                <td>04:00</td>
+                <td>John Loh Tze Koon</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road St 11</td>
+                <td>LCC 2</td>
+              </tr>
+              <tr>
+                <td>
+                <label>
+                    <input type="checkbox" id="cb2" />
+                    <span></span>
+                </label>
+                </td>
+                <td>1</td>
+                <td>21-Feb-2023</td>
+                <td>04:00</td>
+                <td>John Loh Tze Koon</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road St 11</td>
+                <td>LCC 2</td>
+              </tr>
+              <tr>
+                <td>
+                <label>
+                    <input type="checkbox" id="cb3" />
+                    <span></span>
+                </label>
+                </td>
+                <td>1</td>
+                <td>21-Feb-2023</td>
+                <td>04:00</td>
+                <td>John Loh Tze Koon</td>
+                <td>95607839</td>
+                <td>S034958</td>
+                <td>16 Telok Blangah Road St 11</td>
+                <td>LCC 2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>    
+        </div>
+
+        <div class="row">
+          <div class="col s12 mt-2">
+
+        <button class="btn teal waves-effect waves-light" type="submit" name="action">Add New
+          <i class="material-icons right">add</i>
+        </button>
+
+          <button class="btn grey waves-effect waves-light" type="submit" name="action">Remove
+            <i class="material-icons right">remove</i>
+          </button>
+        
+      </div>
+    </div>
+  </div>
+
+
 
   <div class="container">
     <div class="col s12 mt-3 center">
         <a href="javascript:history.back()" class="grey-text">BACK</a>
     </div>
   </div>
-  
 
-  
+
+  <!----------------------- table content end--------------------------->
+
+
 
   <!-- notification messages -->
   <ul id="slide-out" class="sidenav">
@@ -235,6 +346,8 @@
 
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/chk.js"></script>
+
 </body>
 
 </html>
