@@ -182,7 +182,7 @@
       <div class="col s12 title-bread">
         SATS TASKS&nbsp;
         <span class="title-bread grey-text">>&nbsp;</span> 
-        <span class="title-bread-2">ONGOING JOB</span>
+        <span class="title-bread-2">ONGOING JOBS</span>
       </div>    
     </div>
   </div>
@@ -210,25 +210,43 @@
                 </select>
                 <label>Select</label>
               </div>
+            <div class="input-field col s12 m6">
+                <select>
+                  <option value="" disabled selected>Time</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label>Select</label>
+              </div>
           </form>
   </div>
+  </div>
+
+  <div class="container" id="hta">
+    <div class="row">
+      <div class="col s12 center"><h5>ONGOING JOBS</h5></div>
+    </div>
   </div>
 
   <div class="container">
     <div class="row">
       <div class="col s12">
         <a class="btn teal waves-effect waves-light" href="index-dm-indent-ath.html" type="submit"
-      name="action">confirm
-      <i class="material-icons right">start</i>
+      name="action">DELETE
+      <i class="material-icons right">delete</i>
     </a>
   </div>
   </div>
-  </div>
-
-  <div class="container" id="hta">
-    <div class="row">
-      <div class="col s12 mt-1 center"><h5>DRIVERS</h5></div>
-    </div>
   </div>
 
     <!-- table start -->
@@ -238,19 +256,15 @@
           <table class="">
               <thead style="color: #9e3039;">
                 <tr>
-                    <th style="width: 36px;">
+                    <th style="width: 30px;">
                       <label><input type="checkbox" id="allchk" name="allchk" />
                           <span></span>
                       </label>
                       </th>
-                    <th style="width: 40px;">S/N</th>
-                    <th style="width: 106px;">DATE</th>
-                    <th style="width: 60px;">TIME</th>
-                    <th style="width: 180px;">NAME</th>
-                    <th style="width: 94px;">MOBILE</th>
-                    <th style="width: 84px;">PICK UP</th>
-                    <th style="width: 200px;">ADDRESS</th>
-                    <th style="width: 80px;">DROP OFF</th>
+                    <th style="width: 30px;">S/N</th>
+                    <th style="width: 426px;">JOB NO. / STAFF DETAILS</th>
+                    <th style="width: 160px;">DRIVER</th>
+                    <th style="width: 116px;">ACTION</th>
                 </tr>
               </thead>
       
@@ -263,13 +277,21 @@
                   </label>
                   </td>
                   <td>1</td>
-                  <td>21-Feb-2023</td>
-                  <td>04:00</td>
-                  <td>John Loh Tze Koon</td>
-                  <td>95607839</td>
-                  <td>S034958</td>
-                  <td>16 Telok Blangah Road St 11</td>
-                  <td>LCC 2</td>
+                  <td>
+                    <div><span class="tdsp">24 Jul 2023</span><span class="tdsp">00:30</span><span class="tdsp">SICC2307210160</span><span class="tdsp">Lim Yong Jie</span><span class="tdsp">+6598108489</span></div>
+                    <div><span class="tdsp">ICC 2</span><span class="tdsp">Woodlands Train Station Taxi Pickup Point</span><span class="tdsp">S120345</span>
+                    </div>
+                  </td>
+                  <td>Iskandar Mirza Bin Sukri Md</td>
+                  <td>
+                    <select class="browser-default">
+                      <option value="" disabled selected>Assign New Driver</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                  <a class="btn-small mt-05">RE-ASSIGN</a>
+                </td>
                 </tr>
                 <tr>
                   <td>
@@ -278,49 +300,31 @@
                       <span></span>
                   </label>
                   </td>
-                  <td>1</td>
-                  <td>21-Feb-2023</td>
-                  <td>04:00</td>
-                  <td>John Loh Tze Koon</td>
-                  <td>95607839</td>
-                  <td>S034958</td>
-                  <td>16 Telok Blangah Road St 11</td>
-                  <td>LCC 2</td>
-                </tr>
-                <tr>
+                  <td>2</td>
                   <td>
-                  <label>
-                      <input type="checkbox" id="cb3" />
-                      <span></span>
-                  </label>
+                    <div><span class="tdsp">24 Jul 2023</span><span class="tdsp">00:30</span><span class="tdsp">SICC2307210160</span><span class="tdsp">Ting Sie Nguong</span><span class="tdsp">+6598108489</span></div>
+                    <div><span class="tdsp">ICC 2</span><span class="tdsp">Woodlands Train Station Taxi Pickup Point</span><span class="tdsp">S120345</span>
+                    </div>
+                    <div class="mt-1"><span class="tdsp">24 Jul 2023</span><span class="tdsp">00:30</span><span class="tdsp">SICC2307210164</span><span class="tdsp">Narayanan Subramaniam</span><span class="tdsp">+6598108490</span></div>
+                    <div></div>
+                    <div><span class="tdsp">ICC 2</span><span class="tdsp">686B Woodlands Drive 73</span><span class="tdsp">S120345</span>
+                    </div>
                   </td>
-                  <td>1</td>
-                  <td>21-Feb-2023</td>
-                  <td>04:00</td>
-                  <td>John Loh Tze Koon</td>
-                  <td>95607839</td>
-                  <td>S034958</td>
-                  <td>16 Telok Blangah Road St 11</td>
-                  <td>LCC 2</td>
+                  <td>Devaruban Al Subramaniam</td>
+                  <td>
+                    <select class="browser-default">
+                      <option value="" disabled selected>Assign New Driver</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                  <a class="btn-small mt-05">RE-ASSIGN</a>
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>    
           </div>
-  
-          <div class="row">
-            <div class="col s12 mt-2">
-  
-          <button class="btn teal waves-effect waves-light" type="submit" name="action">Add New
-            <i class="material-icons right">add</i>
-          </button>
-  
-            <button class="btn grey waves-effect waves-light" type="submit" name="action">Remove
-              <i class="material-icons right">remove</i>
-            </button>
-          
-        </div>
-      </div>
     </div>
 
   <!-- notification messages -->

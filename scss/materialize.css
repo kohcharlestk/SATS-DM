@@ -271,6 +271,10 @@ h5 {
   background-color: rgb(250, 229, 226);
 }
 
+.tdsp {
+  padding-right: 20px !important;
+}
+
 @media only screen and (max-width: 992px) {
   .logo {
     width: 46px !important;
