@@ -272,7 +272,7 @@ h5 {
 }
 
 .tdsp {
-  padding-right: 20px !important;
+  padding-right: 30px !important;
 }
 
 @media only screen and (max-width: 992px) {
@@ -8265,7 +8265,7 @@ table {
 
 td, th, tr {
   width: auto;
-  padding: 12px 4px 12px 4px;
+  padding: 14px 6px;
 }
 
 @media only screen and (min-width : 993px) {
